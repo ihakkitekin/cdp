@@ -7,11 +7,11 @@ function ChangeDirectoryPartially() {
             $currentDir = $result.FullName
 	}  
 	Else {
-	    Return echo "There is no match for `"$i`" exiting search."
+	    Return Write-Output "There is no match for `"$i`" exiting search."
         }       
     }
 
-    cd $currentDir
+    Set-Location $currentDir
 }
 
 Set-Alias cdp ChangeDirectoryPartially
