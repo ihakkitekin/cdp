@@ -1,5 +1,5 @@
 # cdp
-A simple directory changin script for Windows PowerShell
+A simple directory changing script for Windows PowerShell
 
 cdp(ChangeDirectoryPartially) is a script that wrote recently to allow myself change directories little easier. I am a total stranger to PowerShell, this is basically my first script ever. Therefore, highly likely this script is not the best, might not work well for everyone.
 
