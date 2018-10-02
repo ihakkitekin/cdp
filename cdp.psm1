@@ -2,7 +2,7 @@ function ChangeDirectoryPartially() {
     $currentDir = Get-Location
 
     Foreach($i in $args) {
-        $result = Get-ChildItem $currentDir *$i* -Depth 0 -Recurse -Directory | Select-Object -First 1
+        $result = Get-ChildItem $currentDir *$i* -Depth 0 -Directory | Select-Object -First 1
 	If ($result.length -gt 0){
             $currentDir = $result.FullName
 	}  
